@@ -1,139 +1,235 @@
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
-<!-- 
-THEME: Small Apps | Bootstrap App Landing Template
-VERSION: 1.0.0
-AUTHOR: Themefisher
-
-HOMEPAGE: https://themefisher.com/products/small-apps-free-app-landing-page-template/
-DEMO: https://demo.themefisher.com/small-apps/
-GITHUB: https://github.com/themefisher/Small-Apps-Bootstrap-App-Landing-Template
-
-Get HUGO Version : https://themefisher.com/products/small-apps-hugo-app-landing-theme/
-
-WEBSITE: https://themefisher.com
-TWITTER: https://twitter.com/themefisher
-FACEBOOK: https://www.facebook.com/themefisher
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MWH Software</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Basic Page Needs
-  ================================================== -->
-  <meta charset="utf-8">
-  <title>MWH Software</title>
-
-  <!-- Mobile Specific Metas
-  ================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="MWH Software" />
-  <meta name="keywords" content="mac,ios,software" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <meta name="author" content="Themefisher" />
-  <meta name="generator" content="Themefisher Small Apps Template v1.0" />
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-  
-  <!-- PLUGINS CSS STYLE -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="plugins/aos/aos.css">
-
-  <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet">
-
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 </head>
+<body>
+    <nav class="navbar">
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><img src="img/mwh-software.png" width="100" height="50" /></a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+            </div>
+            <div class="hamburger">
+                <label for="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
 
-<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+<main>
+    
+<style>
+    .contact-hero {
+        margin-top: 70px;
+        padding: 80px 20px 60px;
+        text-align: center;
+        background: linear-gradient(135deg, var(--bg-light), white);
+    }
 
+    .contact-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+        margin-bottom: 1rem;
+    }
 
-<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.png"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="ti-menu"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item @@contact active">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
-        </li>
-      </ul>
+    .contact-hero p {
+        font-size: 1.2rem;
+        color: var(--text-light);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .contact-content {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: start;
+    }
+
+    .contact-info {
+        background: white;
+        padding: 2.5rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+    }
+
+    .contact-info h2 {
+        color: var(--secondary-color);
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-radius: var(--border-radius);
+        background: var(--bg-light);
+    }
+
+    .contact-icon {
+        background: var(--primary-color);
+        color: white;
+        padding: 1rem;
+        border-radius: var(--border-radius);
+        margin-right: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .contact-details h3 {
+        color: var(--secondary-color);
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .contact-details p {
+        color: var(--text-light);
+        margin: 0;
+    }
+
+    .contact-form {
+        background: white;
+        padding: 2.5rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+    }
+
+    .contact-form h2 {
+        color: var(--secondary-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        font-size: 1rem;
+        transition: var(--transition);
+        font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .submit-btn {
+        background: var(--primary-color);
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: var(--border-radius);
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition);
+        width: 100%;
+    }
+
+    .submit-btn:hover {
+        background: var(--primary-dark);
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+        .contact-grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        .contact-hero h1 {
+            font-size: 2.5rem;
+        }
+        
+        .contact-item {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .contact-icon {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+    }
+</style>
+
+<section class="contact-hero">
+    <div class="container">
+        <h1>Contact</h1>
+        <p>Do you have questions about any of our apps? Any suggestions for improvements or new features?
+            We would love to hear from you!</p>
     </div>
-  </div>
-</nav>
-	
-<!--================================
-=            Page Title            =
-=================================-->
-
-<section class="section page-title">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8 m-auto">
-				<!-- Page Title -->
-				<h1>Contact</h1>
-			</div>
-		</div>
-	</div>
 </section>
 
-<!--====  End of Page Title  ====-->
-<!--====================================
-=            Contact            =
-=====================================-->
-<section class="contact section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-                <p>If you have any questions about our apps, please contact us at: <a href="mailto:info@mwhsoftware.com">info@mwhsoftware.com</a></p>
-			</div>
-		</div>
-	</div>
+<section class="contact-content">
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        
+        <div class="contact-item">
+            <div class="contact-icon">
+                <span class="ti-email"></span>
+            </div>
+            <div class="contact-details">
+                <h3>Email</h3>
+                <p><a href="mailto:info@mwhsoftware.com">info@mwhsoftware.com</a></p>
+            </div>
+        </div>
+    </div>
 </section>
-<!--====  End of Contact  ====-->
 
 
-<!--============================
-=            Footer            =
-=============================-->
-<footer>
-  <div class="text-center bg-dark py-4">
-    <small class="text-secondary">Copyright &copy; <script>document.write(new Date().getFullYear())</script>. Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a></small class="text-secondary">
-  </div>
-</footer>
+</main>
 
-  
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
-  
-  <script src="js/script.js"></script>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 MWH Software. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
